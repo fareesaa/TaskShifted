@@ -1,0 +1,104 @@
+C:\Users\BTPNSSHIFTED\latihan01>cd MobileBanking/
+
+C:\Users\BTPNSSHIFTED\latihan01\MobileBanking>touch InformasiSaldo.java
+Touching InformasiSaldo.java
+
+C:\Users\BTPNSSHIFTED\latihan01\MobileBanking>git add InformasiSaldo.java
+
+C:\Users\BTPNSSHIFTED\latihan01\MobileBanking>git commit -m "commit first"
+[master (root-commit) 9f19939] commit first
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 InformasiSaldo.java
+
+C:\Users\BTPNSSHIFTED\latihan01\MobileBanking>git branch
+* master
+
+C:\Users\BTPNSSHIFTED\latihan01\MobileBanking>git checkout -b my-new-branch
+Switched to a new branch 'my-new-branch'
+
+C:\Users\BTPNSSHIFTED\latihan01\MobileBanking>git branch
+  master
+* my-new-branch
+
+C:\Users\BTPNSSHIFTED\latihan01\MobileBanking>git checkout master
+Switched to branch 'master'
+
+C:\Users\BTPNSSHIFTED\latihan01\MobileBanking>git checkout -b transfer-antar-bank
+Switched to a new branch 'transfer-antar-bank'
+
+C:\Users\BTPNSSHIFTED\latihan01\MobileBanking>git branch
+  master
+  my-new-branch
+* transfer-antar-bank
+
+C:\Users\BTPNSSHIFTED\latihan01\MobileBanking>git checkout master
+Switched to branch 'master'
+
+C:\Users\BTPNSSHIFTED\latihan01\MobileBanking>git checkout transfer-antar-bank
+Switched to branch 'transfer-antar-bank'
+
+C:\Users\BTPNSSHIFTED\latihan01\MobileBanking>touch TransferAntarBank.java
+Touching TransferAntarBank.java
+
+C:\Users\BTPNSSHIFTED\latihan01\MobileBanking>git add TransferAntarBank.java
+
+C:\Users\BTPNSSHIFTED\latihan01\MobileBanking>git commit -m"commit TAB"
+[transfer-antar-bank af1f5fc] commit TAB
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 TransferAntarBank.java
+
+C:\Users\BTPNSSHIFTED\latihan01\MobileBanking>git log
+commit af1f5fc9ea626173fb0cb20ec16172fe925d6d1f (HEAD -> transfer-antar-bank)
+Author: Ahmad Farisi <ahmdfarisi.007@gmail.com>
+Date:   Wed Sep 21 14:45:33 2022 +0700
+
+    commit TAB
+
+commit 9f19939488b924d37bcad70074b732ee5586f1c5 (my-new-branch, master)
+Author: Ahmad Farisi <ahmdfarisi.007@gmail.com>
+Date:   Wed Sep 21 14:40:22 2022 +0700
+
+    commit first
+
+C:\Users\BTPNSSHIFTED\latihan01\MobileBanking>git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\Users\BTPNSSHIFTED\latihan01\MobileBanking>git remote add origin https://github.com/fareesaa/TaskShifted.git
+
+C:\Users\BTPNSSHIFTED\latihan01\MobileBanking>git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 224 bytes | 224.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/fareesaa/TaskShifted/pull/new/master
+remote:
+To https://github.com/fareesaa/TaskShifted.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+C:\Users\BTPNSSHIFTED\latihan01\MobileBanking>git branch
+  master
+  my-new-branch
+* transfer-antar-bank
+
+C:\Users\BTPNSSHIFTED\latihan01\MobileBanking>git push -u origin transfer-antar-bank
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 269 bytes | 269.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'transfer-antar-bank' on GitHub by visiting:
+remote:      https://github.com/fareesaa/TaskShifted/pull/new/transfer-antar-bank
+remote:
+To https://github.com/fareesaa/TaskShifted.git
+ * [new branch]      transfer-antar-bank -> transfer-antar-bank
+branch 'transfer-antar-bank' set up to track 'origin/transfer-antar-bank'.
